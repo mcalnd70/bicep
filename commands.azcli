@@ -1,0 +1,8 @@
+# Subscription scope what-if
+az deployment sub what-if --location <location> --template-file <path-to-bicep> --parameters <path-to-parameters.json>
+
+# ResourceGroup sceop what-if
+az deployment group what-if --resource-group <resource-group-name> --template-file <path-to-bicep> --parameters <path-to-parameters.json>
+
+# Template to ACR
+az bicep publish --file <bicep-file> --target br:<registry-name>.azurecr.io/<module-path>:<tag>
